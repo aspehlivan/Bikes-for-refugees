@@ -1,0 +1,190 @@
+html,
+body {
+  font-family: "Source Sans Pro", -apple-system, system-ui, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.site-footer {
+  margin-top: 4em;
+}
+
+.site-footer p {
+  border-top: 1px solid #dccdc6;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.navbar-brand > img {
+  max-height: 40px;
+  width: auto;
+}
+/* add padding to navigation links
+ to spread them out a bit wider */
+.nav-item {
+  padding-right: 20px;
+}
+
+.nav-link {
+  border: 1px solid transparent;
+  margin-right: 90px;
+  padding: 5px 10px 0px 10px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #292b2c;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 0.15em;
+}
+/* change the color of background of the buttons
+ and when hovered. the colour of the "volunteer" 
+ button*/
+
+.btn-primary {
+  background: #ce5f31;
+}
+
+.btn-primary:hover .btn-secondary:hover {
+  background: blue;
+}
+
+.btn-secondary {
+  color: #ce5f31;
+}
+
+/* to fit the buttons on the same line */
+
+@media screen and (max-width: 350px) {
+  .btn-lrg {
+    font-size: 12px;
+  }
+}
+
+/* Alert */
+.alert {
+  position: relative;
+  margin-top: 2em;
+  margin-bottom: 3em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  border: 1px solid #dccdc6;
+  border-radius: 0;
+  font-size: 0.85rem;
+  line-height: 1.3em;
+  background: transparent;
+  color: #292b2c;
+}
+
+.alert:before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background: #ce5f31;
+}
+
+/* Jumbotron */
+.jumbotron {
+  border-radius: 0;
+}
+
+/* Headings */
+.heading-underline {
+  position: relative;
+  margin-bottom: 2em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #dccdc6;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.heading-underline:before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 25%;
+  height: 1px;
+  max-width: 100px;
+  background: #ce5f31;
+}
+
+/* Article */
+.article {
+  margin-bottom: 2em;
+}
+
+.article-title {
+  margin-bottom: 0.5em;
+  font-weight: 700;
+}
+
+.article-read-more a {
+  font-size: 0.85em;
+  font-weight: 700;
+  text-decoration: uppercase;
+}
+
+.article-read-more a:hover,
+.article-read-more a:focus {
+  text-decoration: none;
+}
+
+.article-read-more .fa {
+  margin-right: 0.5em;
+  color: #ce5f31;
+}
+
+.article-read-more:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-brand > img {
+    max-height: 80px;
+  }
+}
+/* reduce the size of "bikes for refugees" on 
+small screen */
+@media screen and (max-width: 320px) {
+  .display-3 {
+    font-size: 30px;
+  }
+}
+
+/* using flexbox to position text elements */
+
+.flexbox_practice {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.heading-underline {
+  width: 100%;
+}
+
+.articles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-1,
+.article-2 {
+  max-width: 47.5%;
+  padding: 20px 15px 0px 15px;
+}
+
+.articles > div:first-child {
+  background-color: #ddd;
+}
+
+.articles > div:last-child {
+  border: 1px solid #ddd;
+}
